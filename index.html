@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Тестовое задание Занько Александр</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<main class="page-main">
+			<div class="wrapper">
+				<div class="title-section">
+					<h1 class="title-section__title">Sign up</h1>
+				</div>
+				<div class="data-section">
+					<div class="data-section--form">
+						<h2 class="data-section__title">New user?</h2>
+						<p class="data-section__subtitle">
+							Use the form below to create your account.
+						</p>
+						<form action="#" method="POST" class="data-section__form form">
+							<div class="form__first-name-wrapper">
+								<label for="first-name" class="form__label">First Name</label>
+								<input
+									type="text"
+									class="form__first-name"
+									id="first-name"
+									placeholder="Alice"
+									required
+								/>
+							</div>
+							<div class="form__last-name-wrapper">
+								<label for="first-name" class="form__label">Last Name</label>
+								<input
+									type="text"
+									class="form__last-name"
+									id="last-name"
+									placeholder="Miller"
+									required
+								/>
+							</div>
+							<div class="form__nation-wrapper">
+								<label for="nation" class="form__label">Nationality</label>
+								<select class="form__nation" name="nation" id="nation">
+									<option>American</option>
+									<option>Belarus</option>
+								</select>
+							</div>
+							<div class="form__email-wrapper">
+								<label for="email" class="form__label">E-mail</label>
+								<input
+									type="email"
+									class="form__email"
+									id="email"
+									placeholder="alice.miller@yahoo.com"
+									required
+								/>
+							</div>
+							<div class="form__birth-wrapper">
+								<label for="date-of-birth" class="form__label"
+									>Date of Birth</label
+								>
+								<input
+									type="date"
+									class="form__date-of-birth"
+									id="date-of-birth"
+								/>
+							</div>
+							<div class="form__gender-wrapper">
+								<label class="form__label form__label--gender">Gender</label>
+								<div class="form__gender-radio-wrapper">
+									<input
+										type="radio"
+										class="form__gender"
+										name="gender"
+										id="male"
+										checked
+									/>
+									<label
+										class="form__gender-label form__gender-label--male"
+										for="male"
+										>Male</label
+									>
+								</div>
+								<div class="form__gender-radio-wrapper">
+									<input
+										type="radio"
+										class="form__gender"
+										name="gender"
+										id="female"
+									/>
+									<label class="form__gender-label" for="female">Female</label>
+								</div>
+							</div>
+							<div class="form__password-wrapper">
+								<label class="form__label" for="password">Password</label>
+								<input
+									type="password"
+									class="form__password"
+									id="password"
+									required
+								/>
+							</div>
+							<div class="form__confirm-password-wrapper">
+								<label class="form__label" for="confirm-password"
+									>Confirm Password</label
+								>
+								<input
+									type="password"
+									class="form__confirm-password"
+									id="confirm-password"
+									required
+								/>
+							</div>
+							<div class="form__bottom">
+								<p class="form__bottom-text">
+									Have an account?
+									<a href="#" class="form__bottom-link">Login</a>
+								</p>
+								<button type="submit" class="form__bottom-button">
+									Complete Signup
+								</button>
+							</div>
+						</form>
+					</div>
+					<div class="data-section--success">
+						<h2 class="data-section--success__title">Thank You!</h2>
+						<p class="data-section--success__subtitle">you registered!</p>
+						<div class="data-section--success__bottom">
+							<p class="form__bottom-text">
+								Have an account?
+								<a href="#" class="form__bottom-link">Login</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="./../scripts/main.js"></script>
+	</body>
+</html>
